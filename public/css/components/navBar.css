@@ -1,0 +1,38 @@
+nav {
+    display: flex;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    background-color: var(--black);
+    justify-content: space-around;
+
+}
+
+nav img {
+    width: auto;
+    height: auto;
+}
+
+nav ul {
+    display: flex;
+    width: max-content;
+    height: auto;
+    align-items: center;
+}
+
+nav ul li {
+    display: none;
+}
+
+nav ul li {
+    font-family: var(--text-family);
+    font-size: var(--font-base);
+    margin: 0 0.3rem;
+    color: white;
+    font-weight: bold;
+}
+nav .menuIcon {
+    width: auto;
+    height: 50px;
+}

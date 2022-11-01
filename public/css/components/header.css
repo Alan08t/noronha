@@ -1,0 +1,87 @@
+header {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    text-align: left;
+    align-items: center;
+
+    background-image: url('/public/images/inicio/portada.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+header .headerMain {
+    display: flex;
+    flex-direction: column;
+    max-width: 65%;
+    height: 100%;
+}
+
+header h1 {
+    max-width: 40%;
+    margin-top: 4%;
+    font-size: var(--title-big);
+    font-family: var(--title-family);
+    /* white-space: nowrap; */
+    color: white;
+
+}
+
+header p {
+    max-width: 70%;
+    font-size: var(--font-base);
+    font-family: var(--text-family);
+    color: white;
+}
+
+
+header .cardsContainer {
+    display: flex;
+    width: 100%;
+    height: auto ;
+    flex-direction: row;
+    gap: 1%;
+
+    background-color: white;
+    padding: 2%;
+    margin-top: 5%;
+    border-radius: 1rem;
+}
+
+
+.card {
+    display: flex;
+    height: 40vh;
+    width: 33%;
+    flex-direction: column;
+}
+
+.card img {
+    display: flex;
+    height: auto;
+    width: 95%;
+    border-radius: 1rem;
+    align-self: center;
+
+}
+
+.card h3  {
+    display: flex;
+    width: 95%;
+    align-self: center;
+
+    font-family: var(--title-family);
+    font-size: var(--title-small);
+    white-space: nowrap;
+}
+
+.card p  {
+    display: flex;
+    width: 95%;
+    align-self: flex-start;
+
+    color: var(--black);
+    font-family: var(--text-family);
+    font-size: var(--font-base);
+}
