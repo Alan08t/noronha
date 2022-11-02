@@ -1,0 +1,23 @@
+.no-wrapper {
+    width: 100%;
+
+
+    background-image: url('/public/images/inicio/fondo-ola.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    padding-top: 12px;
+    padding-bottom: 12px;
+
+}
+
+
+
+.no-wrapper > div > p {
+    font-size: 1rem;
+    font-family: var(--title-family);
+    color: white;
+
+    line-height: 150%;
+}

@@ -1,0 +1,78 @@
+
+.cardsContainer {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 1em;
+
+    background-color: white;
+    border-radius: 1rem;
+
+
+    margin: 0 auto;
+
+
+    padding-top: 12px;
+    padding-bottom: 24px;
+    
+}
+
+
+.card {
+    display: flex;
+    height: auto;
+    width: 100%;
+    flex-direction: column;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-top: 1.5rem;
+}
+
+.card img {
+    display: block;
+    height: auto;
+    width: 65%;
+    border-radius: 1rem;
+
+    margin: auto;
+
+}
+
+.card h4  {
+    display: block;
+    font-family: var(--title-family);
+    font-size: var(--title-small);
+    color: var(--turquoise);
+
+    white-space: nowrap;
+
+    text-align: center;
+}
+
+/* .card p  {
+    display: flex;
+    width: 95%;
+    align-self: flex-start;
+
+    color: var(--black);
+    font-family: var(--text-family);
+    font-size: var(--font-base);
+    line-height: 150%;
+    text-align: left;
+}
+
+
+.card button {
+    width: 30%;
+    height: auto;
+    
+
+    background-color: var(--turquoise);
+
+    font-family: var(--text-family);
+    font-size: var(--font-base);
+    font-weight: 500;
+    color: white;
+} */

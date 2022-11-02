@@ -1,0 +1,26 @@
+p {
+    font-family: var(--text-family);
+    font-size: var(--font-base);
+    color: var(--gray);
+
+    padding: 12px;
+    text-align: center;
+}
+
+
+h1, h2 {
+    font-family: var(--title-family);
+    font-size: var(--title-small);
+
+}
+
+
+h3, h4 {
+    font-family: var(--title-family);
+    font-size: var(--title-small);
+    color: var(--turquoise);
+}
+
+h2 {
+    color: var(--yellow);
+}

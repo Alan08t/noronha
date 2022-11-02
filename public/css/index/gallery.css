@@ -1,0 +1,70 @@
+.gallery {
+    display: flex;
+    width: 90%;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+
+    margin: 0 auto;
+}
+
+
+.bigCard {
+    width: 100%;
+    
+}
+
+
+.bigCard img {
+    display: block;
+    height: auto;
+    width: 90%;
+    border-radius: 1rem;
+
+    margin: auto;
+
+}
+
+
+.bigCard h4 {
+    text-align: center;
+}
+
+
+.smallCard {
+    width:45%;
+
+}
+
+.smallCard img {
+    display: block;
+    height: auto;
+    width: 100%;
+    border-radius: 1rem;
+
+    margin: auto;
+
+}
+
+.smallCard h4 {
+    text-align: center;
+}
+
+
+.gallery button {
+    font-family: var(--text-family);
+    font-weight: 500;
+    font-size: var(--font-base);
+    
+
+    background-color: var(--turquoise);
+    color: white;
+
+    padding: 12px;
+    border-radius: 0.5rem;
+    border: none;
+
+    margin: 0 auto;
+}

@@ -1,0 +1,20 @@
+
+main {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+
+
+
+    background-image: url('/public/images/inicio/portada.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+
+
+
+align-items: center;
+}
+
+

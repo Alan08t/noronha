@@ -1,11 +1,11 @@
 nav {
     display: flex;
     width: 100%;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    height: auto;
 
     background-color: var(--black);
     justify-content: space-around;
+    align-items: center;
 
 }
 
