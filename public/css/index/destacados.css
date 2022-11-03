@@ -1,8 +1,9 @@
 .destacados h2 {
+
+    margin: 36px auto;
+    line-height: 1.1;
+
     text-align: center;
 
-    padding-top: 12px;
-    padding-bottom: 12px;
 
-    justify-content: center;
 }

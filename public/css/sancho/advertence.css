@@ -1,0 +1,15 @@
+.advertence {
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+
+.advertence > p {
+    line-height: 1.1;
+    text-align: center;
+
+}
+
+.advertence > h4 {
+    text-align: center;
+}

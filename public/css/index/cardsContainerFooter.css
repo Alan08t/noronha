@@ -7,3 +7,21 @@
     margin: 0 auto;
 
 }
+
+
+.cardsContainerFooter h2 {
+    line-height: 1.1;
+}
+
+
+.cardsContainerFooter p {
+    max-width: 680px;
+    margin: 0 auto;    
+}
+
+
+@media screen and (min-width: 1024px) {
+    .cardsContainerFooter> h2 {
+        font-size: var(--title-big);
+      }
+}

@@ -12,6 +12,7 @@ nav {
 nav img {
     width: auto;
     height: auto;
+
 }
 
 nav ul {
@@ -34,5 +35,8 @@ nav ul li {
 }
 nav .menuIcon {
     width: auto;
-    height: 50px;
+    height: 32px;
+
+    cursor: pointer;
+
 }

@@ -3,7 +3,7 @@ main {
     display: flex;
     width: 100%;
     flex-direction: column;
-    justify-content: center;
+    flex-grow: 1;
 
 
 
@@ -13,8 +13,7 @@ main {
     background-position: top;
 
 
-
-align-items: center;
+    align-items: center;
 }
 
 

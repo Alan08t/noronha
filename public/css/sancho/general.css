@@ -12,9 +12,8 @@ body {
     display: flex;
     flex-direction: column;
     width: 100vw;
-    height: auto;
     min-height: 100vh;
-
+    height: auto;
 
     overflow-x: hidden;
 }
@@ -39,7 +38,7 @@ p {
 h1, h2 {
     font-family: var(--title-family);
     font-size: var(--title-small);
-    
+
 
 }
 
