@@ -14,5 +14,8 @@
   .destacados h2 {
     font-size: var(--title-big);
     text-align: left;
+
+    padding-left: 0;
+    padding-right: 0;
   }
 }

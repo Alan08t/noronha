@@ -37,19 +37,16 @@
   height: auto;
   font-family: var(--text-family);
   color: var(--turquoise-light);
+  padding-top: 5px;
 
-  padding-top: var(--y-distance);
-  padding-bottom: var(--y-distance);
-  padding-left: var(--x-distance);
-  padding-right: var(--x-distance);
 }
 
 .row {
   display: flex;
   padding-top: var(--y-distance);
   padding-bottom: var(--y-distance);
-  padding-left: var(--x-distance);
-  padding-right: var(--x-distance);
+
+
   flex-wrap: wrap;
 }
 
@@ -57,8 +54,8 @@
   flex: 25%;
   padding-top: var(--y-distance);
   padding-bottom: var(--y-distance);
-  padding-left: var(--x-distance);
-  padding-right: var(--x-distance);
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 @media (max-width: 800px) {
@@ -100,14 +97,9 @@
   }
 
   .gallery figure figcaption {
-    height: 2.2rem;
     font-family: var(--text-family);
     color: var(--turquoise-light);
 
-    padding-top: var(--y-distance-large);
-    padding-bottom: var(--y-distance-large);
-    padding-left: var(--x-distance-large);
-    padding-right: var(--x-distance-large);
   }
 
   #galleryTitle {

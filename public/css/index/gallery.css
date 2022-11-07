@@ -76,6 +76,11 @@
 }
 
 @media screen and (min-width: 680px) {
+  .gallery {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   #buttonMobile {
     display: none;
   }
@@ -109,7 +114,6 @@
     margin: 0;
     padding-top: var(--y-distance);
     padding-bottom: var(--y-distance);
-
   }
 
   .smallCard {

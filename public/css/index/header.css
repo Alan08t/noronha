@@ -35,6 +35,9 @@ header p {
 @media screen and (min-width: 750px) {
   header {
     margin-bottom: 8%;
+
+    padding-left: 0;
+    padding-right: 0;
   }
   header p {
     display: block;
