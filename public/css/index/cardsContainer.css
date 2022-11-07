@@ -54,8 +54,7 @@
 
   padding-top: var(--y-distance);
   padding-bottom: var(--y-distance);
-  padding-left: var(--x-distance);
-  padding-right: var(--x-distance);
+
 }
 
 .card p {
@@ -69,8 +68,7 @@
 
   padding-top: var(--y-distance);
   padding-bottom: var(--y-distance);
-  padding-left: var(--x-distance);
-  padding-right: var(--x-distance);
+
 }
 
 .card button {
@@ -86,7 +84,7 @@
   border-radius: var(--border-radius);
   border: none;
 
-  margin: var(--y-distance) var(--x-distance);
+  margin: var(--y-distance) 0;
 
   box-shadow: var(--box-shadow);
 }
