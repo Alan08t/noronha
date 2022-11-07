@@ -26,6 +26,9 @@
 @media screen and (min-width: 680px) {
   .no-wrapper {
     margin: var(--y-distance-large) 0;
+    padding-top: var(--y-distance-large);
+    padding-bottom: var(--y-distance-large);
+
   }
 
   .no-wrapper > div > p {

@@ -95,8 +95,6 @@
     margin: auto;
     padding-top: var(--y-distance);
     padding-bottom: var(--y-distance);
-    padding-left: var(--x-distance);
-    padding-right: var(--x-distance);
 
     border-radius: 2rem;
   }

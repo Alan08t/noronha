@@ -62,12 +62,10 @@
 @media screen and (min-width: 680px) {
   #testimonyTitle {
     text-align: left;
-    font-size: var(--title-small);
+    font-size: var(--title-big);
 
-    padding-top: var(--y-distance);
-    padding-bottom: var(--y-distance);
-    padding-left: var(--x-distance);
-    padding-right: var(--x-distance);
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .testimonios {
@@ -76,5 +74,7 @@
 
   .cardTestimony {
     width: 50%;
+
+    
   }
 }

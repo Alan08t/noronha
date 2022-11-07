@@ -113,5 +113,9 @@
   #galleryTitle {
     text-align: left;
     font-size: var(--title-big);
+
+    padding-left: 0;
+    padding-right: 0;
+
   }
 }

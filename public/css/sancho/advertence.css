@@ -6,7 +6,7 @@
   line-height: var(--line-height-p);
   text-align: left;
 
-  max-width: 680px;
+  max-width: 640px;
 
   padding-top: var(--y-distance);
   padding-bottom: var(--y-distance);
@@ -31,9 +31,16 @@
   .advertence > p {
     line-height: var(--line-height-p);
     text-align: left;
+
+    padding-left: 0;
+    padding-right: 0;
+    
   }
 
   .advertence > h4 {
     text-align: left;
+
+    padding-left: 0;
+    padding-right: 0;
   }
 }
