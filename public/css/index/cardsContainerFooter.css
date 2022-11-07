@@ -1,27 +1,38 @@
 .cardsContainerFooter {
-    text-align: center;
-    line-height: 150%;
-    
-    width: 100%;
-
-    margin: 0 auto;
-
+  text-align: left;
+  width: 100%;
+  margin: var(--y-distance-large) auto;
 }
-
 
 .cardsContainerFooter h2 {
-    line-height: 1.1;
-}
+  line-height: var(--line-height-h);
 
+  padding-top: var(--y-distance);
+  padding-bottom: var(--y-distance);
+  padding-left: var(--x-distance);
+  padding-right: var(--x-distance);
+}
 
 .cardsContainerFooter p {
-    max-width: 680px;
-    margin: 0 auto;    
+  max-width: 680px;
+  padding-top: var(--y-distance);
+  padding-bottom: var(--y-distance);
+  padding-left: var(--x-distance);
+  padding-right: var(--x-distance);
+  text-align: left;
+
+  line-height: var(--line-height-p);
 }
 
+@media screen and (min-width: 680px) {
+  .cardsContainerFooter > h2 {
+    font-size: var(--title-big);
 
-@media screen and (min-width: 1024px) {
-    .cardsContainerFooter> h2 {
-        font-size: var(--title-big);
-      }
+    text-align: center;
+  }
+
+  .cardsContainerFooter p {
+    text-align: center;
+    margin: 0 auto;
+  }
 }

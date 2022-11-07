@@ -1,15 +1,39 @@
 .advertence {
-    margin-top: 24px;
-    margin-bottom: 24px;
+  margin: var(--y-distance) 0;
 }
 
-
 .advertence > p {
-    line-height: 1.1;
-    text-align: center;
+  line-height: var(--line-height-p);
+  text-align: left;
 
+  max-width: 680px;
+
+  padding-top: var(--y-distance);
+  padding-bottom: var(--y-distance);
+  padding-left: var(--x-distance);
+  padding-right: var(--x-distance);
 }
 
 .advertence > h4 {
-    text-align: center;
+  padding-top: var(--y-distance);
+  padding-bottom: var(--y-distance);
+  padding-left: var(--x-distance);
+  padding-right: var(--x-distance);
+
+  text-align: left;
+}
+
+@media screen and (min-width: 680px) {
+  .advertence {
+    margin: var(--y-distance-large) 0;
+  }
+
+  .advertence > p {
+    line-height: var(--line-height-p);
+    text-align: left;
+  }
+
+  .advertence > h4 {
+    text-align: left;
+  }
 }

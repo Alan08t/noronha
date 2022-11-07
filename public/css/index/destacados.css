@@ -1,9 +1,18 @@
 .destacados h2 {
+  line-height: var(--line-height-h);
+  text-align: left;
 
-    margin: 36px auto;
-    line-height: 1.1;
+  padding-top: var(--y-distance);
+  padding-bottom: var(--y-distance);
+  padding-left: var(--x-distance);
+  padding-right: var(--x-distance);
 
-    text-align: center;
+  white-space: nowrap;
+}
 
-
+@media screen and (min-width: 680px) {
+  .destacados h2 {
+    font-size: var(--title-big);
+    text-align: left;
+  }
 }

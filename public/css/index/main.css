@@ -1,19 +1,13 @@
-
 main {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    flex-grow: 1;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  flex-grow: 1;
 
+  background-image: url("/public/images/inicio/portada.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
 
-
-    background-image: url('/public/images/inicio/portada.jpg');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: top;
-
-
-    align-items: center;
+  align-items: center;
 }
-
-

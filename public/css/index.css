@@ -1,13 +1,11 @@
-@import url('./vars.css');
-@import url('./navBar.css');
-@import url('./footer.css');
-@import url('./index/header.css');
-@import url('./index/main.css');
-@import url('./index/cardsContainer.css');
-@import url('./index/general.css');
-@import url('./index/cardsContainerFooter.css');
-@import url('./index/no-wrapper-section.css');
-@import url('./index/destacados.css');
-@import url('./index/gallery.css');
-
-
+@import url("./vars.css");
+@import url("./navBar.css");
+@import url("./footer.css");
+@import url("./index/header.css");
+@import url("./index/main.css");
+@import url("./index/cardsContainer.css");
+@import url("./index/general.css");
+@import url("./index/cardsContainerFooter.css");
+@import url("./index/no-wrapper-section.css");
+@import url("./index/destacados.css");
+@import url("./index/gallery.css");

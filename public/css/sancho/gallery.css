@@ -1,20 +1,94 @@
 .gallery {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+#galleryTitle {
+  text-align: left;
+  font-size: var(--title-small);
+
+  padding-top: var(--y-distance);
+  padding-bottom: var(--y-distance);
+  padding-left: var(--x-distance);
+  padding-right: var(--x-distance);
+}
+
+.gallery figure img {
+  width: 100%;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+.gallery figure {
+  flex-direction: column;
+  display: flex;
+  margin-bottom: var(--y-distance);
+  text-align: right;
+  font-style: italic;
+  color: var(--gray);
+
+  justify-content: space-between;
+}
+
+.gallery figure figcaption {
+  height: auto;
+  font-family: var(--text-family);
+  color: var(--turquoise-light);
+
+  padding-top: var(--y-distance);
+  padding-bottom: var(--y-distance);
+  padding-left: var(--x-distance);
+  padding-right: var(--x-distance);
+}
+
+.row {
+  display: flex;
+  padding-top: var(--y-distance);
+  padding-bottom: var(--y-distance);
+  padding-left: var(--x-distance);
+  padding-right: var(--x-distance);
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: 25%;
+  padding-top: var(--y-distance);
+  padding-bottom: var(--y-distance);
+  padding-left: var(--x-distance);
+  padding-right: var(--x-distance);
+}
+
+@media (max-width: 800px) {
+  .column {
+    flex: 25%;
+  }
+}
+
+@media (max-width: 600px) {
+  .column {
+    flex: 50%;
+  }
+}
+
+@media screen and (min-width: 680px) {
+  .gallery {
     width: 100%;
     height: 60%;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
+  }
 
-
-}
-
-.gallery figure img {
+  .gallery figure img {
     width: 100%;
     border-radius: 1rem;
     box-shadow: var(--box-shadow);
-}
+  }
 
-.gallery figure {
+  .gallery figure {
     flex-direction: column;
     display: flex;
     margin-bottom: 10%;
@@ -23,41 +97,21 @@
     color: var(--gray);
 
     justify-content: space-between;
+  }
 
-
-
-}
-
-.gallery figure figcaption {
+  .gallery figure figcaption {
     height: 2.2rem;
     font-family: var(--text-family);
     color: var(--turquoise-light);
 
-    padding: 5px;
-}
-.row{
-    display: flex;
-    padding: 5px;
-    flex-wrap: wrap;
-    
+    padding-top: var(--y-distance-large);
+    padding-bottom: var(--y-distance-large);
+    padding-left: var(--x-distance-large);
+    padding-right: var(--x-distance-large);
+  }
 
-}
-
-.column{
-    flex: 25%;
-    padding: 5px;
-
-}
-
-
-@media (max-width: 800px){
-    .column{
-        flex: 25%;
-    }
-}
-
-@media (max-width: 600px){
-    .column{
-        flex: 50%;
-    }
+  #galleryTitle {
+    text-align: left;
+    font-size: var(--title-big);
+  }
 }

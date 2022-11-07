@@ -4,12 +4,14 @@
   flex-direction: column;
 
   background-color: white;
-  border-radius: 1rem;
+  border-radius: var(--border-radius);
 
-  margin: 0 auto;
+  margin: var(--x-distance) auto;
 
-  padding-top: 12px;
-  padding-bottom: 24px;
+  padding-top: var(--y-distance);
+  padding-bottom: var(--y-distance);
+  padding-left: var(--x-distance);
+  padding-right: var(--x-distance);
 }
 
 .card {
@@ -18,20 +20,24 @@
   width: 100%;
   flex-direction: column;
 
+  padding-top: var(--y-distance);
+  padding-bottom: var(--y-distance);
+  padding-left: var(--x-distance);
+  padding-right: var(--x-distance);
+
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 0;
-  margin-top: 1.5rem;
+  margin-top: var(--y-distance);
+  margin-bottom: var(--y-distance);
 }
 
 .card img {
   display: block;
   height: auto;
-  width: 65%;
-  border-radius: 1rem;
+  width: 100%;
+  border-radius: var(--border-radius);
 
   margin: auto;
-  margin-bottom: 1rem;
 
   box-shadow: var(--box-shadow);
 }
@@ -44,84 +50,64 @@
 
   white-space: nowrap;
 
-  text-align: center;
+  text-align: left;
+
+  padding-top: var(--y-distance);
+  padding-bottom: var(--y-distance);
+  padding-left: var(--x-distance);
+  padding-right: var(--x-distance);
 }
 
 .card p {
-    font-family: var(--text-family);
-    font-size: var(--font-base);
-    color: var(--gray);
+  font-family: var(--text-family);
+  font-size: var(--font-base);
+  color: var(--gray);
 
-    line-height: 1.2;
+  line-height: var(--line-height-p);
+
+  text-align: left;
+
+  padding-top: var(--y-distance);
+  padding-bottom: var(--y-distance);
+  padding-left: var(--x-distance);
+  padding-right: var(--x-distance);
 }
 
 .card button {
   font-family: var(--text-family);
   font-weight: 500;
   font-size: var(--font-base);
+  width: fit-content;
 
   background-color: var(--turquoise);
   color: white;
 
-  padding: 12px;
-  border-radius: 0.5rem;
+  padding: var(--button-padding);
+  border-radius: var(--border-radius);
   border: none;
 
-  margin: 0 auto;
+  margin: var(--y-distance) var(--x-distance);
 
   box-shadow: var(--box-shadow);
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 680px) {
   .cardsContainer {
     flex-direction: row;
     margin: auto;
-    padding-top: 12px;
-    transform: translateY(-50px);
+    padding-top: var(--y-distance);
+    padding-bottom: var(--y-distance);
+    padding-left: var(--x-distance);
+    padding-right: var(--x-distance);
+
+    border-radius: 2rem;
   }
 
   .card {
-    display: flex;
-    height: auto;
     width: 33%;
-    flex-direction: column;
-
-    margin-left: 1rem;
-    margin-right: 1rem;
-    margin-bottom: 0;
-    margin-top: 1.5rem;
   }
 
   .card button {
-        margin: 0;
-
-        width: 80px;
-  }
-
-  .card img {
-    display: block;
-    height: auto;
-    width: 100%;
-    border-radius: 1rem;
-  
-    margin: auto;
-    margin-bottom: 1rem;
-  
-    box-shadow: var(--box-shadow);
-  }
-  
-  .card h4 {
-    display: block;
-    font-family: var(--title-family);
-    font-size: var(--title-small);
-    color: var(--turquoise);
-  
-    white-space: nowrap;
-  
-    text-align: left;
-  }
-  
-  .card p {
-    text-align: left;
+    padding: var(--button-padding);
   }
 }

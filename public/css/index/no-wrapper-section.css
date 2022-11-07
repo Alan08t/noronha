@@ -6,9 +6,11 @@
   background-size: cover;
   background-position: center;
 
-  padding-top: 12px;
-  padding-bottom: 12px;
-
+  padding-top: var(--y-distance);
+  padding-bottom: var(--y-distance);
+  padding-left: var(--x-distance);
+  padding-right: var(--x-distance);
+  margin: var(--y-distance) 0;
 }
 
 .no-wrapper > div > p {
@@ -16,24 +18,20 @@
   font-family: var(--title-family);
   color: white;
 
-  line-height: 1.1;
+  line-height: var(--line-height-p);
+
+  text-align: justify;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 680px) {
+  .no-wrapper {
+    margin: var(--y-distance-large) 0;
+  }
 
-
-    .no-wrapper { 
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-    }
   .no-wrapper > div > p {
     max-width: 640px;
-    line-height: 1.4;
     margin: 0 auto;
 
     font-size: 2rem;
   }
-
-
-  
 }

@@ -1,76 +1,164 @@
 .gallery {
-    display: flex;
-    width: 90%;
+  display: flex;
+  width: 100%;
 
-    flex-direction: row;
-    flex-wrap: wrap;
+  padding-top: var(--y-distance);
+  padding-bottom: var(--y-distance);
+  padding-left: var(--x-distance);
+  padding-right: var(--x-distance);
 
-    justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
 
-    margin: 0 auto;
+  justify-content: space-between;
+
+  margin: 0 auto;
 }
-
 
 .bigCard {
-    width: 100%;
-    
+  width: 100%;
+  display: flex;
 }
 
+.bigCard .cardInfo {
+  display: none;
+}
 
 .bigCard img {
-    display: block;
-    height: auto;
-    width: 100%;
-    border-radius: 1rem;
-
-    margin: auto;
-    margin-bottom: 12px;
-
-    box-shadow: var(--box-shadow);
-
+  display: block;
+  height: auto;
+  width: 100%;
+  border-radius: var(--border-radius);
 }
 
+.smallCards {
+  display: flex;
+  width: 100%;
 
-.bigCard h4 {
-    text-align: center;
-    margin-bottom: 24px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  margin: var(--y-distance) 0;
 }
 
+.smallCard .cardInfo {
+  display: none;
+}
 
 .smallCard {
-    width:45%;
-
+  width: 49%;
 }
 
 .smallCard img {
-    display: block;
-    height: auto;
-    width: 100%;
-    border-radius: 1rem;
-
-    margin: auto;
-
+  display: block;
+  height: auto;
+  width: 100%;
+  border-radius: var(--border-radius);
 }
-
-.smallCard h4 {
-    text-align: center;
-}
-
 
 .gallery button {
-    font-family: var(--text-family);
-    font-weight: 500;
-    font-size: var(--font-base);
-    
+  width: fit-content;
+  font-family: var(--text-family);
+  font-weight: 500;
+  font-size: var(--font-base);
 
-    background-color: var(--turquoise);
-    color: white;
+  background-color: var(--turquoise);
+  color: white;
 
-    padding: 12px;
-    border-radius: 0.5rem;
-    border: none;
+  padding: var(--button-padding);
+  border-radius: var(--border-radius);
+  border: none;
 
-    margin: 12px auto;
+  margin: 12px 0;
+
+  box-shadow: var(--box-shadow);
+}
+
+@media screen and (min-width: 680px) {
+  #buttonMobile {
+    display: none;
+  }
+
+  .bigCard .cardInfo {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: flex-start;
+    text-align: left;
+
+    justify-content: space-evenly;
+
+    padding-top: var(--y-distance);
+    padding-bottom: var(--y-distance);
+    padding-left: var(--x-distance);
+    padding-right: var(--x-distance);
+  }
+  .bigCard img {
+    display: block;
+    height: auto;
+    width: 48%;
+
+    margin-bottom: 12px;
 
     box-shadow: var(--box-shadow);
+  }
+
+  .bigCard p {
+    text-align: left;
+    margin: 0;
+    padding-top: var(--y-distance);
+    padding-bottom: var(--y-distance);
+    padding-left: var(--x-distance);
+    padding-right: var(--x-distance);
+  }
+
+  .smallCard {
+    display: flex;
+    width: 50%;
+    flex-direction: row;
+    max-height: 400px;
+  }
+
+  .smallCard img {
+    width: 50%;
+    margin: 0;
+  }
+
+  .smallCard .cardInfo {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    text-align: left;
+
+    justify-content: space-evenly;
+
+    padding-top: var(--y-distance);
+    padding-bottom: var(--y-distance);
+    padding-left: var(--x-distance);
+    padding-right: var(--x-distance);
+
+    line-height: var(--line-height-p);
+  }
+
+  .smallCard .cardInfo ul {
+    margin: 0;
+    padding-top: var(--y-distance);
+    padding-bottom: var(--y-distance);
+    padding-left: var(--x-distance);
+    padding-right: var(--x-distance);
+  }
+  .smallCard .cardInfo li {
+    font-size: var(--text-family);
+    color: var(--gray);
+  }
+
+  .smallCard h4 {
+    text-align: start;
+    line-height: var(--line-height-h);
+  }
+
+  .smallCard p {
+    text-align: start;
+  }
 }

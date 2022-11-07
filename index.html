@@ -13,15 +13,17 @@
   </head>
   <body>
     <nav>
-      <img src="/public/images/logo.png" alt="Fernando de Noronha " />
-      <ul>
-        <li><a href="#">Inicio</a></li>
-        <li><a href="html/sancho.html">Lugares destacados</a></li>
-        <li><a href="#">Fotos</a></li>
-        <li><a href="#">Videos</a></li>
-        <li><a href="#">C&oacute;mo llegar</a></li>
-      </ul>
-      <img src="/public/images/menu.png" class="menuIcon" />
+      <div class="wrapper">
+        <img src="/public/images/logo.png" alt="Fernando de Noronha " />
+        <ul>
+          <li><a class="active" href="#">Inicio</a></li>
+          <li><a href="html/sancho.html">Lugares destacados</a></li>
+          <li><a href="#">Fotos</a></li>
+          <li><a href="#">Videos</a></li>
+          <li><a href="#">C&oacute;mo llegar</a></li>
+        </ul>
+        <img src="/public/images/menu.png" class="menuIcon" />
+      </div>
     </nav>
     <main class="main">
       <header>
@@ -105,51 +107,86 @@
           <h2>Lugares destacados</h2>
           <div class="gallery">
             <div class="bigCard">
-              <figure>
-                <img
-                  src="/public/images/inicio/playas/baia-do-sancho.jpg"
-                  alt=""
-                />
-                <figcaption>
-                  <h4>Baia do Sancho</h4>
-                </figcaption>
-              </figure>
+              <img
+                src="/public/images/inicio/playas/baia-do-sancho.jpg"
+                alt=""
+              />
+              <div class="cardInfo">
+                <h4>Baia do Sancho</h4>
+                <p>
+                  Aislada, de arena fina y dorada, bañada por un agua verde
+                  esmeralda y rodeada de vegetación y fauna intocables, así es
+                  Baia do Sancho, la playa brasileña que suele figurar en todas
+                  las listas de las playas más bonitas del mundo; la última, la
+                  de TripAdvisor 2020. Pero... ¿qué tiene este arenal para que
+                  los usuarios la elijan como la mejor del mundo?
+                </p>
+                <button>Ampliar</button>
+              </div>
             </div>
-            <div class="smallCard">
-              <figure>
+
+            <div class="smallCards">
+              <div class="smallCard">
                 <img
                   src="/public/images/inicio/playas/baia-dos-porcos.jpg"
                   alt=""
                 />
-                <figcaption>
+
+                <div class="cardInfo">
                   <h4>Baia dos Porcos</h4>
-                </figcaption>
-              </figure>
-            </div>
-            <div class="smallCard">
-              <figure>
+                  <p>
+                    Baia dos Porcos es uno de los mejores lugares para practicar
+                    el snorkel en el Parque durante el período sin olas.
+                  </p>
+                  <ul>
+                    <li>Agua cristalina</li>
+                    <li>Poca profundidad</li>
+                    <li>Fauna marina abundante</li>
+                  </ul>
+                  <button>Ampliar</button>
+                </div>
+              </div>
+              <div class="smallCard">
                 <img
                   src="/public/images/inicio/playas/cacimba-do-padre.jpg"
                   alt=""
                 />
-                <figcaption>
+                <div class="cardInfo">
                   <h4>Cacimba do Padre</h4>
-                </figcaption>
-              </figure>
+                  <p>
+                    Realmente es una playa grande, tranquila y con un mar ideal
+                    para hacer surf. Cuenta con un parador en donde se puede
+                    almorzar.
+                  </p>
+                  <ul>
+                    <li>Los mejores picos de surf</li>
+                    <li>Muy espaciosa</li>
+                    <li>Parador para almorzar y bar</li>
+                  </ul>
+
+                  <button>Ampliar</button>
+                </div>
+              </div>
             </div>
-            <button>Ampliar</button>
+
+            <button id="buttonMobile">Ampliar</button>
           </div>
         </div>
       </section>
     </main>
     <footer>
-      <div>
-        <img src="./public/images/social/facebook.svg" alt="Facebook" />
-        <a href="https://www.facebook.com/ConciergeNoronha/"></a>
-        <img src="./public/images/social/instagram.svg" alt="Instagram" />
-        <a href="https://www.instagram.com/noronha_oficial/"></a>
-        <img src="./public/images/social/twitter.svg" alt="Twitter" />
-        <a href="https://twitter.com/noronhape"></a>
+      <div class="wrapper">
+        <div>
+          <img src="/public/images/social/facebook.svg" alt="Facebook" />
+          <a href="https://www.facebook.com/ConciergeNoronha/"></a>
+          <img src="/public/images/social/instagram.svg" alt="Instagram" />
+          <a href="https://www.instagram.com/noronha_oficial/"></a>
+          <img src="/public/images/social/twitter.svg" alt="Twitter" />
+          <a href="https://twitter.com/noronhape"></a>
+        </div>
+        <div class="author">
+          <p>Todos los derechos reservados &copy Nicol&aacute;s Corso</p>
+        </div>
       </div>
     </footer>
   </body>

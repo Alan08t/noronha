@@ -14,15 +14,17 @@
   </head>
   <body>
     <nav>
-      <img src="/public/images/logo.png" alt="Fernando de Noronha " />
-      <ul>
-        <li><a href="./../index.html">Inicio</a></li>
-        <li><a href="#">Lugares destacados</a></li>
-        <li><a href="#">Fotos</a></li>
-        <li><a href="#">Videos</a></li>
-        <li><a href="#">C&oacute;mo llegar</a></li>
-      </ul>
-      <img src="/public/images/menu.png" class="menuIcon" />
+      <div class="wrapper">
+        <img src="/public/images/logo.png" alt="Fernando de Noronha " />
+        <ul>
+          <li><a href="./../index.html">Inicio</a></li>
+          <li><a class="active" href="#">Lugares destacados</a></li>
+          <li><a href="#">Fotos</a></li>
+          <li><a href="#">Videos</a></li>
+          <li><a href="#">C&oacute;mo llegar</a></li>
+        </ul>
+        <img src="/public/images/menu.png" class="menuIcon" />
+      </div>
     </nav>
     <header>
       <h1>Baia do Sancho</h1>
@@ -47,7 +49,7 @@
         </p>
       </section>
       <section class="wrapper">
-        <h2>Galería de imágenes</h2>
+        <h2 id="galleryTitle">Galería de imágenes</h2>
         <div class="gallery">
           <div class="row">
             <div class="column">
@@ -94,7 +96,7 @@
         </div>
       </section>
       <section class="wrapper">
-        <h2>Testimonios</h2>
+        <h2 id="testimonyTitle">Testimonios</h2>
         <div class="testimonios">
           <div class="cardTestimony">
             <img src="/public/images/sancho/testimonios/graciela.jpg" alt="" />
@@ -102,10 +104,10 @@
               <cite
                 >“Este lugar es muy buena opción, recomendable para olvidar lo
                 cotidiano, tranquilidad, naturaleza, belleza
-                inexplicable.”</cite>
-                <span>Graciela, 24 años</span>
+                inexplicable.”</cite
+              >
+              <span>Graciela, 24 años</span>
             </p>
-
           </div>
           <div class="cardTestimony">
             <img src="/public/images/sancho/testimonios/pablo.jpg" alt="" />
@@ -113,9 +115,9 @@
               <cite
                 >“Un must!!!! bajar por la escalera hacia la playa, suma
                 adrenalina. muy muy lindo. Tener en cuenta q hay horarios para
-                subir, bajar y para la presencia de tiburones”</cite>
-                <span>Pablo, 32 años</span>
-
+                subir, bajar y para la presencia de tiburones”</cite
+              >
+              <span>Pablo, 32 años</span>
             </p>
           </div>
         </div>
@@ -123,13 +125,18 @@
     </main>
 
     <footer>
-      <div>
-        <img src="/public/images/social/facebook.svg" alt="Facebook" />
-        <a href="https://www.facebook.com/ConciergeNoronha/"></a>
-        <img src="/public/images/social/instagram.svg" alt="Instagram" />
-        <a href="https://www.instagram.com/noronha_oficial/"></a>
-        <img src="/public/images/social/twitter.svg" alt="Twitter" />
-        <a href="https://twitter.com/noronhape"></a>
+      <div class="wrapper">
+        <div>
+          <img src="/public/images/social/facebook.svg" alt="Facebook" />
+          <a href="https://www.facebook.com/ConciergeNoronha/"></a>
+          <img src="/public/images/social/instagram.svg" alt="Instagram" />
+          <a href="https://www.instagram.com/noronha_oficial/"></a>
+          <img src="/public/images/social/twitter.svg" alt="Twitter" />
+          <a href="https://twitter.com/noronhape"></a>
+        </div>
+        <div class="author">
+          <p>Todos los derechos reservados &copy Nicol&aacute;s Corso</p>
+        </div>
       </div>
     </footer>
   </body>
